@@ -5,44 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Personal Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
   </head>
-  <body style="background-color: beige">
+  <body>
     <header>
-      <h1>It's me, Daniela!</h1>
+      <h1>Daniela Blase | Web Development</h1>
       <nav>
-        <a href="#Biography">Biography</a>
-        <a href="#Contact">Contact</a>
+        <a href="#Biografie" class="a-menu">Über mich</a>
+        <a href="#Porfolio" class="a-menu">Portfolio</a>
+        <a href="#Skills" class="a-menu">Skills</a>
+        <a href="#Social-Media" class="a-menu">Social Media</a>
+        <a href="#CV" class="a-menu">CV</a>
+        <a href="#Kontakt" class="a-menu">Kontakt</a>
       </nav>
     </header>
     <main>
+      <div class="Biografie1">
       <section>
         <img
           src="https://profile-images.xing.com/users/8e8fcbc944a639b5beca1e3fb0cdcd7d-2/image.256x256.jpg?0.42872216502282035"
-          alt="This is me"
-          width="40%"
-        />
+          alt="This is me" class="Bild1"/>
+      </section>
+
+      <section>
+        <h2 id="Biografie">Über mich</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum sit
+          amet justo donec. Ac turpis egestas maecenas pharetra convallis
+          posuere morbi leo urna. Massa placerat duis ultricies lacus. Tincidunt
+          eget nullam non nisi est sit amet. Pellentesque id nibh tortor id
+          aliquet lectus. A cras semper auctor neque vitae.
+        </p>
+        <div class="Biografie2">
+
+          <section>
+          <h3>Was ich mag</h3>
+          <ul>
+            <li>Italy</li>
+            <li>Travel</li>
+            <li>Mindfulness</li>
+            <li>Meditation</li>
+            <li>Nature</li>
+          </ul>
+        </section>
+
+        <section>  
+          <h3>Was ich nicht mag</h3>
+          <ul>
+            <li>Schlager-Music</li>
+            <li>Winter</li>
+          </ul>
+        </section>
+
+      </div>
+      </section>
+    </div>
+
+      <section>
+        <h2 id="Portfolio">Portfolio</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Dignissimos alias fugiat architecto magnam facere vel eius nobis harum. 
+          Iusto totam numquam ex, molestiae labore nesciunt recusandae ratione laudantium 
+          obcaecati nisi perspiciatis, eum aliquam sed nobis vel doloremque vero illum ullam 
+          provident! Nobis minima sit modi totam magni asperiores dolorum repellendus.
+        </p>
       </section>
       <section>
-        <h2>Interests</h2>
-        <h3>What I like</h3>
-        <ul>
-          <li>Italy</li>
-          <li>Travel</li>
-          <li>Mindfulness</li>
-          <li>Meditation</li>
-          <li>Nature</li>
+        <h2 id="Skills">Skills</h2>
+        <p>
+          <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
         </ul>
-        <h3>What I don't like</h3>
-        <ul>
-          <li>Schlager-Music</li>
-          <li>Winter</li>
-        </ul>
+        </p>
       </section>
       <section>
-        <h2 id="Contact">Contact Information</h2>
-      </section>
-      <section>
-        <h2>Where you can find me</h2>
+        <h2 id ="Social-Media">Social Media</h2>
         <ul>
           <li>
             <a href="https://www.xing.com/profile/Daniela_Blase2/cv"> Xing</a>
@@ -54,12 +98,7 @@
           <li>Github</li>
         </ul>
       </section>
-      <section>
-        <h2 id="Biography">Biography / About me</h2>
-        <p>Hi, my name is Daniela, I'm 28 years old and I live in Hamburg!</p>
-      </section>
-      <section>
-        <h2>CV</h2>
+        <h2 id="CV">CV</h2>
         <table>
           <tr>
             <th>Summer 2013</th>
@@ -78,38 +117,45 @@
           </tr>
         </table>
       </section>
-      <form>
-        <h2>Let's stay in touch!</h2>
-        <label for="Name">Name</label>
-        <input type="name" name="name" placeholder="name" id="Name" /> <br />
+      <section>
+        <h2 id="Kontakt">Kontakt</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum sit
+          amet justo donec. Ac turpis egestas maecenas pharetra convallis
+          posuere morbi leo urna. Massa placerat duis ultricies lacus. Tincidunt
+          eget nullam non nisi est sit amet. Pellentesque id nibh tortor id
+          aliquet lectus. A cras semper auctor neque vitae. 
+        </p>
+      </section>
+      
+        <h2>Kontakt aufnehmen</h2>
+        <div class="Formular">
 
-        <label for="E-Mail">E-Mail</label>
-        <input type="E-Mail" name="E-Mail" placeholder="E-Mail" id="E-Mail" />
-        <br />
+        <form>
+              <label for="Name">Name</label>
+              <input type="name" name="name" placeholder="name" id="Name" /> <br/>
 
-        <label for="Age">Age</label>
-        <input type="radio" name="age" id="Age" />18-25
-        <label for="Age">Age</label>
-        <input type="radio" name="age" id="Age" />26-30
-        <label for="Age">Age</label>
-        <input type="radio" name="age" id="Age" />31-35
-        <label for="Age">Age</label>
-        <input type="radio" name="age" id="Age" />Older
-        <br />
+              <label for="E-Mail">E-Mail</label>
+              <input type="E-Mail" name="E-Mail" placeholder="E-Mail" id="E-Mail" />
+              <br/>
 
-        <label for="Comment">Comment</label> <br />
-        <textarea name="Comment" id="Comment" cols="30" rows="5"></textarea>
-        <br />
+              <label for="Comment">Comment</label> <br />
+              <textarea name="Comment" id="Comment" cols="30" rows="5"></textarea>
+              <br />
 
-        <label for="newsletter-checkbox"></label>
-        <input type="checkbox" name="checkbox" id="newsletter-checkbox" />
-        Keep me updated with a weekly Newsletter! <br />
-
-        <button>Submit</button>
+              <label for="newsletter-checkbox"></label>
+              <input type="checkbox" name="checkbox" id="newsletter-checkbox" />
+        Keep me updated with a weekly Newsletter! <br/>
+      
       </form>
+
+      <button>Senden</button>
+      </div>
+      
     </main>
     <footer>
-      <nav>
+      <nav class ="footer">
         <a href="Impressum.html">Impressum</a>
         <a href="Datenschutzerklärung">Datenschutzerklärung</a>
       </nav>

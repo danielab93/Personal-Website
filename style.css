@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: rgb(196, 177, 148);
+}
+
+h1 {
+  color: black;
+  background-color: gainsboro;
+  padding: 2px;
+}
+
+h2 {
+  color: black;
+  background-color: gainsboro;
+  border: 1px black solid;
+  padding: 2px;
+}
+
+h3 {
+  color: rgb(0, 0, 0);
+}
+
+a:hover {
+  color: white;
+}
+
+nav {
+  display: flex; /* oder display: grid */
+  flex-wrap: wrap;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  justify-content: space-between;
+  justify-content: left;
+}
+
+img {
+  border-radius: 50%;
+}
+
+footer {
+  background-color: gainsboro;
+  margin: 1px;
+  padding: 1px;
+  border: 1px black solid;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+}
+
+.Bild1 {
+  width: 80%;
+  max-width: 400px;
+  min-width: 200px;
+  margin: 10px auto;
+  display: block;
+}
+
+.Formular {
+  background-color: rgb(167, 127, 95);
+  padding: 4px;
+}
+
+.Biografie2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.a-menu {
+  color: black;
+  align-items: left;
+  margin: 3px;
+  background-color: gainsboro;
+  padding: 5px;
+  display: inline-block;
+  width: fit-content;
+}
+
+@media (max-width: 520px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 370px) {
+  nav {
+    display: block;
+  }
+}
+
+@media (min-width: 1000px) {
+  .Biografie1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
