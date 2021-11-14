@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Personal Website</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
+    <header id="sticky">
       <h1>Daniela Blase | Web Development</h1>
       <nav>
         <a href="#Biografie" class="a-menu">Über mich</a>
@@ -24,69 +27,76 @@
     </header>
     <main>
       <div class="Biografie1">
-      <section>
-        <img
-          src="https://profile-images.xing.com/users/8e8fcbc944a639b5beca1e3fb0cdcd7d-2/image.256x256.jpg?0.42872216502282035"
-          alt="This is me" class="Bild1"/>
-      </section>
-
-      <section>
-        <h2 id="Biografie">Über mich</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum sit
-          amet justo donec. Ac turpis egestas maecenas pharetra convallis
-          posuere morbi leo urna. Massa placerat duis ultricies lacus. Tincidunt
-          eget nullam non nisi est sit amet. Pellentesque id nibh tortor id
-          aliquet lectus. A cras semper auctor neque vitae.
-        </p>
-        <div class="Biografie2">
-
-          <section>
-          <h3>Was ich mag</h3>
-          <ul>
-            <li>Italy</li>
-            <li>Travel</li>
-            <li>Mindfulness</li>
-            <li>Meditation</li>
-            <li>Nature</li>
-          </ul>
+        <section>
+          <img
+            src="https://profile-images.xing.com/users/8e8fcbc944a639b5beca1e3fb0cdcd7d-2/image.256x256.jpg?0.42872216502282035"
+            alt="This is me"
+            class="Bild1"
+          />
         </section>
 
-        <section>  
-          <h3>Was ich nicht mag</h3>
-          <ul>
-            <li>Schlager-Music</li>
-            <li>Winter</li>
-          </ul>
-        </section>
+        <section>
+          <h2 id="Biografie">Über mich</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum
+            sit amet justo donec. Ac turpis egestas maecenas pharetra convallis
+            posuere morbi leo urna. Massa placerat duis ultricies lacus.
+            Tincidunt eget nullam non nisi est sit amet. Pellentesque id nibh
+            tortor id aliquet lectus. A cras semper auctor neque vitae.
+          </p>
+          <div class="Biografie2">
+            <section>
+              <h3>Interessen</h3>
+              <ul>
+                <li>Italien</li>
+                <li>Reisen</li>
+                <li>Achtsamkeit</li>
+                <li>Meditation</li>
+                <li>Natur</li>
+                <li>Festivals</li>
+              </ul>
+            </section>
 
+            <section>
+              <h3>Was ich nicht mag</h3>
+              <ul>
+                <li>Unehrliche Menschen</li>
+                <li>scharfes Essen</li>
+              </ul>
+            </section>
+          </div>
+        </section>
       </div>
-      </section>
-    </div>
 
       <section>
         <h2 id="Portfolio">Portfolio</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Dignissimos alias fugiat architecto magnam facere vel eius nobis harum. 
-          Iusto totam numquam ex, molestiae labore nesciunt recusandae ratione laudantium 
-          obcaecati nisi perspiciatis, eum aliquam sed nobis vel doloremque vero illum ullam 
-          provident! Nobis minima sit modi totam magni asperiores dolorum repellendus.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+          alias fugiat architecto magnam facere vel eius nobis harum. Iusto
+          totam numquam ex, molestiae labore nesciunt recusandae ratione
+          laudantium obcaecati nisi perspiciatis, eum aliquam sed nobis vel
+          doloremque vero illum ullam provident! Nobis minima sit modi totam
+          magni asperiores dolorum repellendus.
         </p>
       </section>
       <section>
         <h2 id="Skills">Skills</h2>
-        <p>
-          <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-        </ul>
-        </p>
+        <p>HTML</p>
+        <div class="container">
+          <div class="skills html">90%</div>
+        </div>
+        <p>CSS</p>
+        <div class="container">
+          <div class="skills css">70%</div>
+        </div>
+        <p>JavaScript</p>
+        <div class="container">
+          <div class="skills js">20%</div>
+        </div>
       </section>
       <section>
-        <h2 id ="Social-Media">Social Media</h2>
+        <h2 id="Social-Media">Social Media</h2>
         <ul>
           <li>
             <a href="https://www.xing.com/profile/Daniela_Blase2/cv"> Xing</a>
@@ -98,22 +108,52 @@
           <li>Github</li>
         </ul>
       </section>
+      <section>
         <h2 id="CV">CV</h2>
         <table>
           <tr>
-            <th>2013</th>
-            <th>Abitur</th>
-            <th>Gymnasium am Markt, Bünde</th>
+            <th>Jahr</th>
+            <th>Station</th>
           </tr>
           <tr>
-            <td>Aug 2014 - Jun 2017</td>
-            <td>Ausbildung</td>
-            <td>Neue Osnabrücker Zeitung, Osnabrück</td>
+            <td>06/2013</td>
+            <td>Abitur, Gymasium am Markt, Bünde</td>
           </tr>
           <tr>
-            <td>Jun 2017 - Aug 2018</td>
-            <td>Projektassis</td>
-            <td>Osnabrück</td>
+            <td>08/2013 - 07/2014</td>
+            <td>Jahrespraktikum Redaktion, Westfalen Blatt, Bünde</td>
+          </tr>
+          <tr>
+            <td>08/2014 - 06/2017</td>
+            <td>
+              Ausbildung, Medienkauffrau Digital und Print bei Neue Osnabrücker
+              Zeitung
+            </td>
+          </tr>
+          <tr>
+            <td>06/2017 - 08/2018</td>
+            <td>
+              Projektassistenz Organisation & IT, Neue Osnabrücker Zeitung
+            </td>
+          </tr>
+          <tr>
+            <td>09/2018 - 11/2018</td>
+            <td>Persönliche Auszeit: Sprach- & Kulturreise Italien</td>
+          </tr>
+          <tr>
+            <td>01/2019 - 04/2020</td>
+            <td>Activity Management Assistant, Gebr. Heinemann, Hamburg</td>
+          </tr>
+          <tr>
+            <td>05/2020 - 09/2021</td>
+            <td>
+              Assistenz der Geschäftsführung & Produktmanagerin Local SEO,
+              digitalanders, Hamburg
+            </td>
+          </tr>
+          <tr>
+            <td>11/2021 - 02/2022</td>
+            <td>Trainee Web Development, neuefische, Hamburg</td>
           </tr>
         </table>
       </section>
@@ -125,37 +165,33 @@
           amet justo donec. Ac turpis egestas maecenas pharetra convallis
           posuere morbi leo urna. Massa placerat duis ultricies lacus. Tincidunt
           eget nullam non nisi est sit amet. Pellentesque id nibh tortor id
-          aliquet lectus. A cras semper auctor neque vitae. 
+          aliquet lectus. A cras semper auctor neque vitae.
         </p>
       </section>
-      
-        <h2>Kontakt aufnehmen</h2>
-        <div class="Formular">
 
+      <h2>Kontakt aufnehmen</h2>
+      <div class="Formular">
         <form>
-              <label for="Name">Name</label>
-              <input type="name" name="name" placeholder="Name" id="Name" /> <br/>
+          <label for="Name">Name</label> <br />
+          <input type="name" name="name" placeholder="Name" id="Name" /> <br />
 
-              <label for="E-Mail">E-Mail</label>
-              <input type="E-Mail" name="E-Mail" placeholder="E-Mail" id="E-Mail" />
-              <br/>
-
-              <label for="Comment">Comment</label> <br />
-              <textarea name="Comment" id="Comment" cols="30" rows="5"></textarea>
-              <br />
-
-              <label for="newsletter-checkbox"></label>
-              <input type="checkbox" name="checkbox" id="newsletter-checkbox" />
-        Keep me updated with a weekly Newsletter! <br/>
-      
-      </form>
-
-      <button>Senden</button>
+          <label for="E-Mail">E-Mail</label> <br />
+          <input type="E-Mail" name="E-Mail" placeholder="E-Mail" id="E-Mail" />
+          <br />
+          <label for="Comment">Deine Nachricht</label> <br />
+          <textarea name="Comment" id="Comment" cols="30" rows="5"></textarea>
+          <br />
+          <input type="checkbox" name="checkbox" id="newsletter-checkbox" />
+          <label for="newsletter-checkbox"
+            >Ich möchte den Newsletter erhalten!</label
+          >
+          <br />
+          <button>Senden</button>
+        </form>
       </div>
-      
     </main>
     <footer>
-      <nav class ="footer">
+      <nav class="footer-nav">
         <a href="Impressum.html">Impressum</a>
         <a href="Datenschutzerklärung">Datenschutzerklärung</a>
       </nav>
